@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity"
+  >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="steps:"
+            android:textSize="40sp"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/stepsText"
+            android:textSize="40sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearHeart"
+        android:layout_below="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HeartRate:"
+            android:textSize="40sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0bpm"
+            android:id="@+id/heartText"
+            android:textSize="40sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/caloriesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caloriesInput"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:layout_marginLeft="30dp"
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/purple_200"
+        android:gravity="center"
+        android:text="Calculate Calories Burnt" />
+
+    <EditText
+        android:id="@+id/caloriesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your weight here..."
+        android:layout_below="@+id/linearHeart"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="25sp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="steps:"
+
+            />
+
+        <TextView
+            android:id="@+id/stepsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HeartRate:"
+
+            />
+
+        <TextView
+            android:id="@+id/heartText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70bpm" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:padding="4dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="76dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="10dp"
+            android:background="#18DD02"
+            android:text="start training"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="#DD0202"
+            android:enabled="false"
+            android:text="stop training"
+            android:textColor="#FFFFFF"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
